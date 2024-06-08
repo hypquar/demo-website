@@ -1,0 +1,97 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+html {
+
+    background-image: url(img/background-city.png);
+    
+    background-repeat: no-repeat;
+    
+    background-position: left top;
+    
+    background-attachment: scroll;
+    
+    -webkit-background-size: 100%;
+    
+    -moz-background-size: 100%;
+    
+    -o-background-size: 100%;
+    
+    background-size: 100%;
+    
+    }
+
+body {
+    font-family: Inter;
+    color: aliceblue;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: center;
+}
+
+.main-content {
+    margin-top: 7%;
+    text-align: left top;
+}
+h1 {
+    font-weight: semi-bold;
+    font-size: 300%;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 32px;
+    color: darkgrey;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.phone-number {
+    text-decoration: underline;
+    font-size: 100%;
+}
+
+.site-link {
+    font-size: 120%;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.navbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    margin: 0 5%;
+    padding: 0 2%;
+    border: 0px solid red;
+    border-radius: 25px;
+    background: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 100%;
+    color: black;
+}
